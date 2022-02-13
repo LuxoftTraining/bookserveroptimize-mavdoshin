@@ -8,10 +8,11 @@ import javax.persistence.*;
 @Entity
 @Getter @Setter @ToString
 @Table(indexes = {@Index(columnList = "title")})
-public class Book {
+public class Word {
     @Id
-    //@GeneratedValue
+    @GeneratedValue
     private Integer id;
+    private Integer bookId;
     private String title;
 
 }
